@@ -9,7 +9,7 @@
 4. Do a "pip list" on terminal to make sure you have local packages installed.
 
 ----------------------------------------------- MongoDB Setup -----------------------------------------------
-mongodb+srv://gaurxng_012:Gau@2003@cluster0.wloqh7l.mongodb.net/?appName=Cluster0
+
 5. Sign up to MongoDB Atlas and create a new project by just providing it a name then next next create.
 6. From "Create a cluster" screen, hit "create", Select M0 service keeping other services as default, hit "create deployment"
 7. Setup the username() and password() and then create DB user.
