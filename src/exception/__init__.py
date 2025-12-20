@@ -10,7 +10,12 @@ def error_message_detail(error: Exception, error_detail: sys) -> str:
     :return: A formatted error message string.
     """
     # Extract traceback details (exception information)
-    _, _, exc_tb = error_detail.exc_info()
+    _, _, exc_tb = error_detail.exc_info() #(exception_type, exception_value, traceback)
+    # You only care about the traceback, so _ ignores the first two values
+    '''📌 exc_tb now contains:
+    File name
+    Line number
+    Call stack'''
 
     # Get the file name where the exception occurred
     file_name = exc_tb.tb_frame.f_code.co_filename
