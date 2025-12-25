@@ -10,9 +10,20 @@ class TrainingPipelineConfig:
     pipeline_name: str = PIPELINE_NAME
     artifact_dir: str = os.path.join(ARTIFACT_DIR, TIMESTAMP)
     timestamp: str = TIMESTAMP
-
+'''
+class TrainingPipelineConfig:
+    def __init__(self, pipeline_name, artifact_dir, timestamp):
+        self.pipeline_name = pipeline_name
+        self.artifact_dir = artifact_dir
+        self.timestamp = timestamp
+Same as above but using __init__ method
+'''
 
 training_pipeline_config: TrainingPipelineConfig = TrainingPipelineConfig()
+'''
+TrainingPipelineConfig()
+This creates an object from the class
+'''
 
 @dataclass
 class DataIngestionConfig:
