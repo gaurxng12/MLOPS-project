@@ -19,6 +19,9 @@ class DataValidation:
         """
         :param data_ingestion_artifact: Output reference of data ingestion artifact stage
         :param data_validation_config: configuration for data validation
+        DataIngestionArtifact after the colon is just a type hint,
+          telling Python (and readers or IDEs) 
+          “this parameter is expected to be an instance of DataIngestionArtifact.”
         """
         try:
             self.data_ingestion_artifact = data_ingestion_artifact
